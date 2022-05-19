@@ -106,8 +106,17 @@ body {
     text-align: center;
 }
 .music-container.play .music-info{
-    opacity: 1;
-    transform: translateY(-100%);
+    animation: moveup both 0.3s ease-in;
+}
+@keyframes moveup {
+    from {
+        transform: translateY(0%);
+        opacity: 0;
+    } 
+    to {
+        transform: translateY(-100%);
+        opacity: 0.8;
+    }
 }
 .progress-container {
     background: #fff;
